@@ -12,6 +12,7 @@
     <RepositoryUrl>https://github.com/SeongSikChae/System.Security.Cryptography.Extensions.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/SeongSikChae/System.Security.Cryptography.Extensions.git</PackageProjectUrl>
+    <Description>.NET System.Security.Cryptography namespace Extensions</Description>
   </PropertyGroup>
 
   <ItemGroup>
