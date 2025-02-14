@@ -53,6 +53,6 @@
 		/// <summary>
 		/// Cipher Mode Property
 		/// </summary>
-		public override CipherMode Mode { get; set; }
+		public override CipherMode Mode { get; set; } = CipherMode.CBC;
 	}
 }
