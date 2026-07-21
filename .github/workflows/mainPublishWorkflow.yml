@@ -20,7 +20,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.0.x
+        dotnet-version: 10.0.x
 
     - name: Restore dependencies
       run: dotnet restore
@@ -59,7 +59,7 @@ jobs:
     - name: Upload to GitHub Release
       uses: softprops/action-gh-release@v2
       with:
-        files: ./System.Security.Cryptography.Extensions/bin/Release/System.Security.Cryptography.Extensions.${{ steps.project_version.outputs.version }}.nupkg
+        files: ./System.Security.Cryptography.Extensions/bin/Release/Biz.Bizadm.System.Security.Cryptography.Extensions.${{ steps.project_version.outputs.version }}.nupkg
         tag_name: ${{ env.tag_name }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
