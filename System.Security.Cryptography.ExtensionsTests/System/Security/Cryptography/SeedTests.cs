@@ -19,7 +19,7 @@
 			}
 
 			{
-				Assert.ThrowsException<ArgumentException>(() =>
+				Assert.ThrowsExactly<ArgumentException>(() =>
 				{
 					using Seed seed = Seed.Create("Seeda");
 				});
